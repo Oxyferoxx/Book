@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pl.akademiakodu.book.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="1.5"
+        android:background="@color/colorMenu"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/buttonMyBooks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="77dp"
+            android:text="Moje"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:id="@+id/buttonLibrary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/buttonMyBooks"
+            android:layout_alignStart="@+id/buttonMyBooks"
+            android:layout_below="@+id/buttonMyBooks"
+            android:layout_marginTop="43dp"
+            android:text="Biblioteka"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:id="@+id/buttonUsers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/buttonLibrary"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/buttonLibrary"
+            android:layout_centerVertical="true"
+            android:text="Czytelnik" />
+
+        <Button
+            android:id="@+id/buttonLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/buttonUsers"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignStart="@+id/buttonUsers"
+            android:layout_below="@+id/buttonUsers"
+            android:layout_marginTop="41dp"
+            android:text="Wyloguj" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:id="@+id/frameFragment"
+
+        android:background="@drawable/white_border"
+        android:layout_weight="3"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+</LinearLayout>
